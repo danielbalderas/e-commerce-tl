@@ -1,31 +1,31 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import TabsPage from '../views/TabsPage.vue'
+import MainTab from '../views/MainTab.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/tab1'
+    redirect: '/tabs/productsTab'
   },
   {
     path: '/tabs/',
-    component: TabsPage,
+    component: MainTab,
     children: [
       {
         path: '',
-        redirect: '/tabs/tab1'
+        redirect: '/tabs/productsTab'
       },
       {
-        path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        path: 'productsTab',
+        component: () => import('@/views/ProductsTab.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'carTab',
+        component: () => import('@/views/CarTab.vue')
       },
       {
-        path: 'tab3',
-        component: () => import('@/views/Tab3Page.vue')
+        path: 'notificationsTab',
+        component: () => import('@/views/NotificationsTab.vue')
       }
     ]
   }

@@ -12,15 +12,20 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@capacitor/android": "6.0.0",
     "@capacitor/app": "6.0.0",
     "@capacitor/core": "6.0.0",
     "@capacitor/haptics": "6.0.0",
+    "@capacitor/ios": "6.0.0",
     "@capacitor/keyboard": "6.0.0",
     "@capacitor/status-bar": "6.0.0",
+    "@ionic/storage": "^4.0.0",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
+    "cordova-sqlite-storage": "^6.1.0",
     "ionicons": "^7.0.0",
     "vue": "^3.3.0",
+    "vue-cookies": "^1.8.4",
     "vue-router": "^4.2.0"
   },
   "devDependencies": {
